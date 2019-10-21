@@ -1,0 +1,34 @@
+SENSORES
+--------
+
+
+VARIABLES
+---------
+
+CONSTANTES VITALES
+    - Frecuencia Cardiaca
+        [60 - 180] ppm
+    - Temperatura
+        [36.1 - 37.2] grados
+    - Sudoración
+        [0 - 100] %
+    - Nivel de estrés
+        [0 - 100] %
+    - Movimiento
+        [10-50] apm
+    - Distancia recorrida último día
+        [0 - 4] km
+    - Posición geográfica
+
+    - 
+
+AMBIENTE
+    - Humedad
+        [15 - 60] %
+    - Luminosidad
+        [100 - 300] cd
+    - Ruido
+        [50 - 200] dB
+    - Temperatura ambiente
+        [-20 - 30]
+    - 

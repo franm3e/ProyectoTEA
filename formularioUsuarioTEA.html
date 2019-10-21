@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Asociación Desarrollo - Autismo Albacete</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="http://www.autismoalbacete.org/images/favicon2.png" rel="shortcut icon" type="image/vnd.microsoft.icon">
+
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+	<!-- AG GRID -->
+	<script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-grid.css">
+	<link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-theme-balham.css">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/formularioUsuarioTEA.css">
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+		<a class="navbar-brand" href="usuariosP.html">
+			Asociación Desarrollo
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto ml-5">
+                <li class="nav-item active mr-3" >
+                    <a class="nav-link" href="usuariosP.html"><i class="fa fa-user"></i> Usuarios</a>
+                </li>
+                <li class="nav-item mr-3">
+                    <a class="nav-link" href="monitorP.html"><i class="fa fa-desktop"></i> Monitor<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item mr-3">
+                    <a class="nav-link" href="radarP.html"><i class="fa fa-street-view "></i> Radar<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item mr-3">
+					<a class="nav-link" href="registrarCrisisP.html"><i class="fas fa-brain"></i> Inteligencia Artificial<span class="sr-only"></span></a>
+				</li>
+			</ul>
+			<span class="navbar-text" style="padding-top:0; padding-bottom:0;">
+				<a class="nav-link form-inline" href="login.html"><i class="fas fa-sign-out-alt"></i> Salir<span class="sr-only"></span></a>
+			</span>
+		</div>
+	</nav>
+
+<!-- CONTENIDO WEB -->
+
+    <form class="formulario">
+        <h2>Dar de alta usuario</h2>
+        <hr>
+        <h5>Datos Personales</h5>
+        <div class="cuadro">
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label>Nombre</label>
+                    <input class="form-control">
+                </div>
+                <div class="form-group col-md-4">
+                    <label>Apellidos</label>
+                    <input class="form-control">
+                </div>
+                <div class="form-group col-md-4">
+                    <label>Género</label>
+                    <input class="form-control" placeholder="Masculino/Femenino">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label>País</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group col-md-4">
+                    <label>Localidad</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group col-md-4">
+                    <label>Provincia</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Dirección</label>
+                <input type="text" class="form-control" placeholder="Calle Ejemplo, Nº1, 2D">
+            </div>
+        </div>
+        <h5>Información Padre/Madre o Tutor</h5>
+        <div class="cuadro">
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label>Nombre</label>
+                    <input class="form-control">
+                </div>
+                <div class="form-group col-md-4">
+                    <label>Apellidos</label>
+                    <input class="form-control">
+                </div>
+                <div class="form-group col-md-4">
+                    <label>DNI/NIF</label>
+                    <input class="form-control" >
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label>Género</label>
+                    <input class="form-control" placeholder="Masculino/Femenino">
+                </div>
+                <div class="form-group col-md-4">
+                    <label>Teléfono</label>
+                    <input class="form-control">
+                </div>
+                <div class="form-group col-md-4">
+                    <label>Email</label>
+                    <input type="email" class="form-control">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label>País</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group col-md-4">
+                    <label>Localidad</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group col-md-4">
+                    <label>Provincia</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Dirección</label>
+                <input type="text" class="form-control" placeholder="Calle Ejemplo, Nº1, 2D">
+            </div>
+        </div>
+
+        <h5>Fortalezas Personales y Contextuales</h5>
+        <div class="cuadro">
+            <div class="form-group">
+                <div class="form-row">
+                    <div class="form-check col-md-4">
+                        <input type="checkbox" id="lectura">
+                        <label class="form-check-label" for="lectura">Lectura</label>
+                  </div>
+                <div class="form-check col-md-4">
+                        <input type="checkbox" id="escritura">
+                        <label class="form-check-label" for="escritura">Escritura</label>
+                  </div>
+                    <div class="form-check col-md-4">
+                        <input  type="checkbox" id="autonomo">
+                        <label class="form-check-label" for="autonomo">Autónomo</label>
+                  </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-row">
+                    <div class="form-check col-md-4">
+                        <input type="checkbox" id="Creativo">
+                        <label class="form-check-label" for="Creativo">Creativo</label>
+                  </div>
+                <div class="form-check col-md-4">
+                        <input type="checkbox" id="interes">
+                        <label class="form-check-label" for="interes">Muestra Interes</label>
+                  </div>
+                    <div class="form-check col-md-4">
+                        <input type="checkbox" id="Participativo">
+                        <label class="form-check-label" for="Participativo">Participativo</label>
+                  </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-row">
+                    <div class="form-check col-md-4">
+                        <input type="checkbox" id="Normas">
+                        <label class="form-check-label" for="Normas">Respeta Normas</label>
+                  </div>
+                <div class="form-check col-md-4">
+                        <input type="checkbox" id="Comunicacion">
+                        <label class="form-check-label" for="Comunicacion">Comunicación Oral</label>
+                  </div>
+                    <div class="form-check col-md-4">
+                        <input type="checkbox" id="ToleraFrustracion">
+                        <label class="form-check-label" for="ToleraFrustracion">Tolera Frustración</label>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <h5>Evaluaciones</h5>
+        <div class="cuadro">
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label>Evaluacion de CI</label>
+                    <input class="form-control">
+                </div>
+                <div class="form-group col-md-4">
+                    <label>Audiometria</label>
+                    <input class="form-control">
+                </div>
+                <div class="form-group col-md-4">
+                    <label>Diagnóstico psicosocial</label>
+                    <input class="form-control" >
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label>Evaluacion psicológica</label>
+                    <input class="form-control">
+                </div>
+                <div class="form-group col-md-6">
+                    <label>Examen Visual</label>
+                    <input class="form-control">
+                </div>
+            </div>
+
+        </div>
+        <h5>Observaciones</h5>
+        <textarea class="form-control" id="textArea" rows="3"></textarea>
+        <button type="submit" class="btn btn-primary">Añadir Usuario</button>
+    </form>
+
+
+</body>
+</html>

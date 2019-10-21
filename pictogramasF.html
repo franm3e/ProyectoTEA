@@ -1,0 +1,167 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Asociación Desarrollo - Autismo Albacete</title>
+        <link rel="stylesheet" href="css/pictogramas.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      	<link href="http://www.autismoalbacete.org/images/favicon2.png" rel="shortcut icon" type="image/vnd.microsoft.icon">
+
+
+      	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+      	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+      	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+      	<!-- AG GRID -->
+      	<script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script>
+      	<link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-grid.css">
+      	<link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-theme-balham.css">
+
+      	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+      	<link rel="stylesheet" href="css/style.css">
+        <script>
+            function dragstart(caja, evento) {
+                // el elemento a arrastrar
+                event.dataTransfer.setData('Data', caja.id);
+            }
+
+            function drop(target, evento) {
+                // obtenemos los datos
+                var caja = event.dataTransfer.getData('Data');
+                // agregamos el elemento de arrastre al contenedor
+                target.appendChild(document.getElementById(caja));
+            }
+            function refrescar(){
+                location.reload();
+            }
+        </script>
+    </head>
+    <body>
+      <!-- NAVBAR -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      		<a class="navbar-brand" href="panelControlF.html">
+      			Asociación Desarrollo
+      		</a>
+      		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      			<span class="navbar-toggler-icon"></span>
+      		</button>
+      		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+      			<ul class="navbar-nav mr-auto ml-5">
+      				<li class="nav-item mr-3" >
+      					<a class="nav-link" href="panelControlF.html"><i class="fa fa-desktop"></i> Panel de Control</a>
+      				</li>
+      				<li class="nav-item mr-3">
+      					<a class="nav-link" href="historialF.html"><i class="fas fa-chart-line"></i> Historial<span class="sr-only"></span></a>
+      				</li>
+                    <li class="nav-item active mr-3">
+      					<a class="nav-link" href="pictogramasF.html"><i class="far fa-images"></i> Pictogramas<span class="sr-only"></span></a>
+      				</li>
+                    <li class="nav-item mr-3">
+					   <a class="nav-link" href="registrarCrisisF.html"><i class="fas fa-brain"></i> Inteligencia Artificial<span class="sr-only"></span></a>
+				    </li>
+                    
+      			</ul>
+      			<span class="navbar-text" style="padding-top:0; padding-bottom:0;">
+      				<a class="nav-link form-inline" href="login.html"><i class="fas fa-sign-out-alt"></i> Salir<span class="sr-only"></span></a>
+      			</span>
+      		</div>
+      	</nav>
+
+        <section>
+            <h3 class="h3">Pictogramas</h3>
+            <div class="borde">
+                <div style="overflow-x:scroll; height:170px; width:100%; margin: auto;">
+                    <div style="width:99999999px;">
+                        <!-- elementos arrastrables -->
+                        <div id="caja1" draggable="true" ondragstart="dragstart(this, event)"> <span class="titulo">Vestirse</span>
+                            <img class="imagen" src="images/cambiarse.png" width="70%" heght="70%">
+                        </div>
+                        <div id="caja2" draggable="true" ondragstart="dragstart(this, event)"> <span class="titulo">Casa</span>
+                            <img class="imagen" src="images/casas.png" width="70%" heght="70%">
+                        </div>
+                        <div id="caja3" draggable="true" ondragstart="dragstart(this, event)"> <span class="titulo">Cena</span>
+                            <img class="imagen" src="images/cenas.png" width="70%" heght="70%">
+                        </div>
+                        <div id="caja4" draggable="true" ondragstart="dragstart(this, event)"> <span class="titulo">Desayuno</span>
+                            <img class="imagen" src="images/desayuno.png" width="70%" heght="70%">
+                        </div>
+                        <div id="caja5" draggable="true" ondragstart="dragstart(this, event)"> <span class="titulo">Dormir</span>
+                            <img class="imagen" src="images/dormir.png" width="70%" heght="70%">
+                        </div>
+                        <div id="caja6" draggable="true" ondragstart="dragstart(this, event)"> <span class="titulo">Ducha</span>
+                            <img class="imagen" src="images/duchar.png" width="70%" heght="70%">
+                        </div>
+                        <div id="caja7" draggable="true" ondragstart="dragstart(this, event)"> <span class="titulo">Hacer la cama</span>
+                            <img class="imagen" src="images/hacer_la_cama.png" width="70%" heght="70%">
+                        </div>
+                        <div id="caja8" draggable="true" ondragstart="dragstart(this, event)"> <span class="titulo">Jugar</span>
+                            <img class="imagen" src="images/jugar.png" width="70%" heght="70%">
+                        </div>
+                        <div id="caja9" draggable="true" ondragstart="dragstart(this, event)"> <span class="titulo">Lavar los dientes</span>
+                            <img class="imagen" src="images/lavar_los_dientes.png" width="70%" heght="70%">
+                        </div>
+                        <div id="caja10" draggable="true" ondragstart="dragstart(this, event)"> <span class="titulo">Merienda</span>
+                            <img class="imagen" src="images/merienda.png" width="70%" heght="70%">
+                        </div>
+                        <div id="caja11" draggable="true" ondragstart="dragstart(this, event)"> <span class="titulo">Ver una pelicula</span>
+                            <img class="imagen" src="images/pelicula.png" width="70%" heght="70%">
+                        </div>
+                        <div id="caja12" draggable="true" ondragstart="dragstart(this, event)"> <span class="titulo">Zoo</span>
+                            <img class="imagen" src="images/zoologico.png" width="70%" heght="70%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <h3 class="h3">Tarea Personalizada</h3>
+            <div class="borde">
+                <div style="overflow-x:scroll; height:170px; width:100%; margin: auto;">
+                    <div style="width:2000px;">
+                        <!-- contenedor -->
+                        <div id="contenedor" ondrop="drop(this, event)" ondragenter="return false" ondragover="return false">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="desplegable">
+                <div class="form-group">
+
+                        <select class="form-control" id="exampleFormControlSelect1">
+                                <option>Elige una opción</option>
+                                <option>Por la mañana</option>
+                                <option>Por la tarde</option>
+                                <option>Por la noche</option>
+                                <option>Otro</option>
+                        </select>
+                </div>
+            </div>
+
+
+            <button type="submit" class="btn btn-primary" id="boton" data-toggle="modal" data-target="#exampleModal">Enviar Pictograma</button>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Confirmación</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Enviar pictograma a la pulsera
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary" onclick="refrescar()">Confirmar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

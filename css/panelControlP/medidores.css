@@ -1,0 +1,30 @@
+.medidasAmbientales{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cuadro{
+    background-color: white;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 3px #black;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 4%;
+}
+
+.cuadro p{
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    font-size: 13px;
+}
+
+.gauge{
+    height: 150px;
+    width: 150px;
+}
+

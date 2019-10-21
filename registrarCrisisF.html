@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Asociación Desarrollo - Autismo Albacete</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="http://www.autismoalbacete.org/images/favicon2.png" rel="shortcut icon" type="image/vnd.microsoft.icon">
+
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+	<!-- AG GRID -->
+	<script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-grid.css">
+	<link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-theme-balham.css">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+		<a class="navbar-brand" href="panelControlF.html">
+			Asociación Desarrollo
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto ml-5">
+				<li class="nav-item mr-3" >
+					<a class="nav-link" href="panelControlF.html"><i class="fa fa-desktop"></i> Panel de Control</a>
+				</li>
+				<li class="nav-item mr-3">
+					<a class="nav-link" href="historialF.html"><i class="fas fa-chart-line"></i> Historial<span class="sr-only"></span></a>
+				</li>
+				<li class="nav-item mr-3">
+					<a class="nav-link" href="pictogramasF.html"><i class="far fa-images"></i> Pictogramas<span class="sr-only"></span></a>
+				</li>
+                <li class="nav-item active mr-3">
+					<a class="nav-link" href="registrarCrisisF.html"><i class="fas fa-brain"></i> Inteligencia Artificial<span class="sr-only"></span></a>
+				</li>
+			</ul>
+			<span class="navbar-text" style="padding-top:0; padding-bottom:0;">
+				<a class="nav-link form-inline" href="login.html"><i class="fas fa-sign-out-alt"></i> Salir<span class="sr-only"></span></a>
+			</span>
+		</div>
+	</nav>
+    
+    
+    
+    <!-- CONTENIDO WEB -->
+    <h3 style="margin-left: 5%; margin-top: 2%;">Registrar Crisis para Javier Herreros Martínez</h3>
+    <hr style="margin: 5%; margin-top: 1%; margin-bottom: 1%">
+    <div class="container-fluid" style="width: 90%;">
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-3">
+                    <label for="inputFecha">Fecha</label>
+                    <input type="date" class="form-control" id="inputFecha">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="inputHora">Hora</label>
+                    <input type="time" class="form-control" id="inputHora">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Registrar</button>
+        </form>
+    </div>
+    <h3 style="margin-left: 5%; margin-top: 2%;">Validar Crisis para Javier Herreros Martínez</h3>
+    <hr style="margin: 5%; margin-top: 1%; margin-bottom: 1%">
+    <div class="row" style="height: 100%; margin-top: 1%; width: 90%; margin: auto;">
+			<div class="col-12 text-left">
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th scope="col"></th>
+							<th scope="col">Fecha</th>
+							<th scope="col">Hora</th>
+							<th scope="col"></th>
+						</tr>
+					</thead>
+					<tbody>
+                        <tr>
+							<th scope="row">1</th>
+								<td>02/02/2019</td>
+								<td>16:16</td>
+								<td style="text-align: center"><button type="submit" class="btn btn-danger" >Desestimar</button></td>
+						</tr>
+                        <tr>
+							<th scope="row">7</th>
+								<td>29/01/2019</td>
+								<td>19:49</td>
+								<td style="text-align: center"><button type="submit" class="btn btn-danger" >Desestimar</button></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+</body>
+</html>

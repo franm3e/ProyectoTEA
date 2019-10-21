@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Asociación Desarrollo - Autismo Albacete</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="http://www.autismoalbacete.org/images/favicon2.png" rel="shortcut icon" type="image/vnd.microsoft.icon">
+
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+	<!-- AG GRID -->
+	<script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-grid.css">
+	<link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-theme-balham.css">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+		<a class="navbar-brand" href="usuariosP.html">
+			Asociación Desarrollo
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto ml-5">
+				<li class="nav-item active mr-3" >
+					<a class="nav-link" href="usuariosP.html"><i class="fa fa-user"></i> Usuarios</a>
+				</li>
+				<li class="nav-item mr-3">
+					<a class="nav-link" href="monitorP.html"><i class="fa fa-desktop"></i> Monitor<span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item mr-3">
+					<a class="nav-link" href="radarP.html"><i class="fa fa-street-view "></i> Radar<span class="sr-only">(current)</span></a>
+				</li>
+                <li class="nav-item mr-3">
+					<a class="nav-link" href="registrarCrisisP.html"><i class="fas fa-brain"></i> Inteligencia Artificial<span class="sr-only"></span></a>
+				</li>
+			</ul>
+			<span class="navbar-text" style="padding-top:0; padding-bottom:0;">
+				<a class="nav-link form-inline" href="login.html"><i class="fas fa-sign-out-alt"></i> Salir<span class="sr-only"></span></a>
+			</span>
+		</div>
+	</nav>
+
+<!-- CONTENIDO WEB -->
+<div class="container-fluid text-center" style="margin-top: 20px">
+		<div class="row" style="height: auto; margin-top: 20px;">
+			<div class="col-12 text-left">
+				<p>Listado de las personas con TEA registradas en el sistema.</p>
+				<hr>
+			</div>
+		</div>
+		<div class="row" style="height: auto; margin-top: 20px;">
+				<div class="col-12 text-left">
+					<a class="btn btn-primary" href="formularioUsuarioTEA.html" role="button">Añadir Usuario</a>
+					<button type="button" class="btn btn-secondary">Editar Usuario</button>
+					<button type="button" class="btn btn-secondary">Eliminar Usuario</button>
+				</div>
+			</div>
+		<div class="row" style="height: 100%; margin-top: 20px">
+			<div class="col-12 text-left">
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th scope="col"></th>
+							<th scope="col">Nombre</th>
+							<th scope="col">Apellidos</th>
+							<th scope="col">Edad</th>
+							<th scope="col">Matrícula</th>
+							<th scope="col">ID Pulsera</th>
+							<th scope="col">Tutor/a</th>
+							<th scope="col">Centro</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">1</th>
+								<td>Francisco</td>
+								<td>Martínez Esteso</td>
+								<td>23</td>
+								<td>FME2332</td>
+								<td>1FME</td>
+								<td>Ana Lozano</td>
+								<td>A. Desarrollo</td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+								<td>Javier</td>
+								<td>Herreros Martínez</td>
+								<td>24</td>
+								<td>JHM2442</td>
+								<td>1JHM</td>
+								<td>Ana Lozano</td>
+								<td>A. Desarrollo</td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+								<td>César</td>
+								<td>Díaz Nieto</td>
+								<td>24</td>
+								<td>CDN2442</td>
+								<td>1CDN</td>
+								<td>Ana Lozano</td>
+								<td>A. Desarrollo</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

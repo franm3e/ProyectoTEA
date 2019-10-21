@@ -1,0 +1,46 @@
+.bordeInfo{
+    background-color: white;
+    width: 96%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 3px #black;
+}
+
+.tituloCuadro{
+    margin-left: 2%;
+    margin-top: 2%;
+    font-size: 13px;
+}
+
+.info{
+    font-size: 20px;
+    margin-top: 5%;
+    text-align: center;
+    font-weight: bold;    
+}
+
+.imagen{
+    display:block;
+    margin:auto;
+}
+
+.bordeMapa{
+    background-color: white;
+
+    width: 96%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border: 2px solid black;
+    box-shadow: 0px 0px 3px #black;
+}
+
+.mapa{
+    height: 210px;
+}
