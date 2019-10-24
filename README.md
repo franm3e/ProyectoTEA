@@ -20,5 +20,4 @@ Para ello, la Asociación de Desarrollo – Autismo Albacete, participará en la
 
 ## Proyecto
 
-Proponemos una plataforma dashboard operacional desde la que controlar todos los datos que se reciben de las pulseras de actividad portadas por cada usuario. Esto permite la monitorización de un montón de constantes vitales, así como otras variables externas relativas al entorno (tiempo, luz, ruido).
-Esto nos permite aplicar la inteligencia artificial para mejorar con el uso la precisión del sistema.
+Se propone una plataforma dashboard operacional desde la que controlar todos los datos que se reciben de las pulseras de actividad portadas por cada usuario. Esto permite la monitorización de muchas de las constantes vitales de los usuarios, así como otras variables externas relativas al entorno (tiempo, luz, ruido). Esto nos permite aplicar procesos de inteligencia artificial para mejorar con el uso la precisión del sistema.
